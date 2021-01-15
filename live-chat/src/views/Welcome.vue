@@ -1,6 +1,6 @@
 <template>
     <div class="welcome container">
-        <p>Welcome</p>
+        <p>Welcome Let's Chat</p>
         <div v-if="showLogin">
             <h2>Login</h2>
              <LoginForm @login="enterChat"/>
@@ -71,5 +71,11 @@ export default {
 
     .welcome button {
         margin: 20px auto;
+    }
+
+    @media (max-width: 576px) {
+        .welcome input {
+            width: 90%;
+        }
     }
 </style>
